@@ -1,0 +1,16 @@
+.empty {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 200px;
+  .icon-empty {
+    width: 100px;
+    height: auto;
+  }
+  span {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+}

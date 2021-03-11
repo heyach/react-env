@@ -1,0 +1,59 @@
+.userinfo {
+  .userinfo-con {
+    position: relative;
+    width: 640px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    .basic-info {
+      .title {
+        height: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+      }
+      .info-item {
+        position: relative;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        .label {
+          flex-basis: 80px;
+          text-align: right;
+          margin-right: 20px;
+          font-size: 14px;
+        }
+        .content {
+          .avatar {
+            width: 60px;
+            height: 60px;
+          }
+          input {
+            padding-left: 10px;
+            height: 40px;
+          }
+          textarea {
+            line-height: 20px;
+            padding: 10px;
+            border-color: #e5e5e5;
+            outline: none;
+          }
+        }
+      }
+    }
+    .btn-save {
+      width: 100px;
+      position: relative;
+      margin: 0 auto;
+      height: 35px;
+      line-height: 35px;
+      background: #21a0fe;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 4px;
+      color: #fff;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}

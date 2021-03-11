@@ -1,0 +1,107 @@
+
+.release-article {
+  padding-top: 20px;
+  .release-con {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+
+    .form-item {
+      position: relative;
+      min-height: 40px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+
+      .label {
+        flex-basis: 70px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .content {
+        flex-grow: 1;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+
+        .editor{
+          width: 100%;
+          border: 1px #e5e5e5 solid;
+          border-radius: 2px;
+          .editor-menu{
+            border-bottom: 1px #e5e5e5 solid;
+          }
+          .editor-body{
+            min-height: 200px;
+          }
+        }
+
+        .article-tags {
+          display: flex;
+          padding-right: 10px;
+
+          .tag-item {
+            position: relative;
+            padding: 0 10px;
+            border-radius: 4px;
+            border: 1px #21a0fe solid;
+            height: 25px;
+            line-height: 25px;
+            color: #21a0fe;
+            font-size: 12px;
+            margin: 0 5px;
+
+            img {
+              position: absolute;
+              width: 12px;
+              height: 12px;
+              top: -6px;
+              right: -6px;
+              z-index: 10;
+              cursor: pointer;
+            }
+          }
+        }
+
+        span {
+          font-size: 12px;
+          color: #999;
+        }
+        .label-tip{
+          margin-left: 10px;
+        }
+        input {
+          height: 40px;
+          flex-grow: 1;
+          padding-left: 10px;
+          box-sizing: border-box;
+          font-size: 14px;
+        }
+      }
+    }
+    .form-item.article-content {
+      flex-direction: column;
+      align-items: flex-start;
+      .label {
+        flex-basis: 40px;
+        line-height: 40px;
+      }
+    }
+    .btn-release {
+      position: relative;
+      width: 100px;
+      height: 35px;
+      line-height: 35px;
+      margin: 0 auto;
+      border-radius: 4px;
+      border: 1px #21a0fe solid;
+      color: #21a0fe;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

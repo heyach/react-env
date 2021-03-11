@@ -1,0 +1,10 @@
+.home{
+  background: red;
+
+  span{
+    color: blue;
+  }
+  &span{
+    font-size: 20px;
+  }
+}

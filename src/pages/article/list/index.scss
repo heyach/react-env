@@ -1,0 +1,103 @@
+.article-list {
+  .article-con {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    &::after {
+      content: " ";
+      display: block;
+      font-size: 0;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .article-item {
+      width: 270px;
+      height: 270px;
+      float: left;
+      margin: 0 15px 20px 15px;
+      background: #fff;
+      box-shadow: 0 4px 8px 0 rgba(95, 101, 105, 0.05);
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover .article-main-pic {
+        transform: scale(1.1);
+      }
+      .top-info {
+        position: relative;
+        width: 270px;
+        height: 150px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .article-main-pic {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.5s;
+        }
+
+        .tags {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 10px;
+          display: flex;
+          .tag {
+            padding: 0 10px;
+            height: 20px;
+            line-height: 20px;
+            color: #fff;
+            border-radius: 10px;
+            background: #21a0fe;
+            border: 2px #fff solid;
+            font-size: 12px;
+            margin: 0 5px;
+          }
+        }
+      }
+
+      .info {
+        height: 120px;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+          height: 40px;
+          line-height: 20px;
+          color: #666;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        .short-intro {
+          height: 32px;
+          line-height: 16px;
+          font-size: 14px;
+          color: #999;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        .ctime {
+          font-size: 10px;
+          color: #999;
+        }
+      }
+    }
+  }
+}

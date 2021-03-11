@@ -1,0 +1,33 @@
+.number-box-con{
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fff;
+
+  .shop-car{
+    position: relative;
+    width: 350px;
+    height: 630px;
+    background: #ccc;
+
+    .store-item{
+      padding: 10px 15px;
+      border-bottom: 1px #fff solid;
+  
+      .store-goods{
+        .goods-item{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 10px;
+        }
+      }
+    }
+    .bottom-info{
+      position: absolute;
+      bottom: 0;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 15px;
+    }
+  }
+}

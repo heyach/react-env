@@ -1,0 +1,38 @@
+
+$btn-bg-color: #21a0fe;
+.pagination {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .page-item {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .page-item.cur {
+    background: $btn-bg-color;
+    color: #fff;
+  }
+}
